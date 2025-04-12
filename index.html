@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>侍切り - Samurai Slice</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: "Arial", sans-serif;
+        }
+        canvas {
+            border: 2px solid #333;
+        }
+        #score {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #fff;
+            font-size: 24px;
+        }
+        #startButton {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px 40px;
+            font-size: 24px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+        }
+        #startButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="score">得点: <span id="scoreValue">0</span></div>
+    <button id="startButton">ゲームスタート (Game Start)</button>
+    <canvas id="gameCanvas"></canvas>
+    
+    <!-- Audio elements with correct filenames -->
+    <audio id="sound1" src="sounds/hai.mp3"></audio>
+    <audio id="sound2" src="sounds/ninja.mp3"></audio>
+    <audio id="sound3" src="sounds/sword.mp3"></audio>
+    
+    <script src="game.js"></script>
+</body>
+</html>
