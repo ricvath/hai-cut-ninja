@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>侍切り - Samurai Slice</title>
     <style>
         body {
@@ -13,9 +14,11 @@
             align-items: center;
             height: 100vh;
             font-family: "Arial", sans-serif;
+            touch-action: none; /* Prevents default touch behaviors */
         }
         canvas {
             border: 2px solid #333;
+            touch-action: none; /* Prevents default touch behaviors */
         }
         #score {
             position: absolute;
